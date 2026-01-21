@@ -2,7 +2,7 @@
     "name": "Boeing 707-436 (BOAC)",
     "description": "BOAC 707 model by m_p_v_g on Sketchfab.",
     "authors": "m_p_v_g (3D Model), forest603-ux (Config)",
-    "model": "https://raw.githubusercontent.com/forest603-ux/707/main/source.glb",
+    "model": "https://raw.githubusercontent.com/forest603-ux/707/main/BOAC_707.glb",
     "mass": 142000,
     "scale": 1,
     "contactPoints": [
