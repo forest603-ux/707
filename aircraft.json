@@ -1,0 +1,41 @@
+{
+    "name": "Boeing 707-436 (BOAC)",
+    "description": "BOAC 707 model by m_p_v_g on Sketchfab.",
+    "authors": "m_p_v_g (3D Model), forest603-ux (Config)",
+    "model": "https://raw.githubusercontent.com/forest603-ux/707/main/source.glb",
+    "mass": 142000,
+    "scale": 1,
+    "contactPoints": [
+        {"p": [0, 16.5, -3.4], "name": "nose_gear"},
+        {"p": [-4.5, -2, -3.6], "name": "left_gear"},
+        {"p": [4.5, -2, -3.6], "name": "right_gear"}
+    ],
+    "engines": [
+        {"p": [-11.5, 5, -1], "thrust": 18000, "dir": [0, 1, 0]},
+        {"p": [-6.5, 3, -0.5], "thrust": 18000, "dir": [0, 1, 0]},
+        {"p": [6.5, 3, -0.5], "thrust": 18000, "dir": [0, 1, 0]},
+        {"p": [11.5, 5, -1], "thrust": 18000, "dir": [0, 1, 0]}
+    ],
+    "animations": [
+        {
+            "type": "rotate",
+            "name": "elevators",
+            "target": ["node_83", "node_84", "node_150"],
+            "axis": [1, 0, 0],
+            "value": "pitch",
+            "ratio": 0.5
+        },
+        {
+            "type": "rotate",
+            "name": "gear_retract",
+            "target": ["node_110", "node_111", "node_112"],
+            "axis": [1, 0, 0],
+            "value": "gearPosition",
+            "ratio": 1.6
+        }
+    ],
+    "cameras": [
+        {"name": "Cockpit", "view": [0, 18.5, 1.2], "type": "cockpit"},
+        {"name": "Wing View", "view": [4, -4, 1], "rotation": [0, -0.7, 0]}
+    ]
+}
